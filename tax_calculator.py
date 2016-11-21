@@ -20,9 +20,11 @@ def single():
 		tax_liability = ((income - 416700) * .35 ) + 120910.25
 	else:
 		tax_liability = ((income - 418400) * .396 ) + 121505.25
+
+	atax = income - tax_liability
 	
-	print "You owe $%f in taxes" % (tax_liability)
-	print "You income after tax is: $%f" % (income - tax_liability)
+	print("You owe $%.2f in taxes" % tax_liability)
+	print("You income after tax is: $%.2f" % atax)
 	
 def mfj():
 	std = 12700
@@ -44,9 +46,11 @@ def mfj():
 		tax_liability = ((income - 416700) * .35 ) + 112728
 	else:
 		tax_liability = ((income - 470700) * .396 ) + 131628
-	
-	print "You owe %f in taxes" % (tax_liability)
-	print "You income after tax is: $%f" % (income - tax_liability)
+
+	atax = income - tax_liability
+
+	print("You owe $%.2f in taxes" % tax_liability)
+	print("You income after tax is: $%.2f" % atax)
 	
 def mfs():
 	std = 6350
@@ -68,9 +72,11 @@ def mfs():
 		tax_liability = ((income - 208350) * .35 ) + 56364
 	else:
 		tax_liability = ((income - 235350) * .396 ) + 65814
-	
-	print "You owe %f in taxes" % (tax_liability)
-	print "You income after tax is: $%f" % (income - tax_liability)
+
+	atax = income - tax_liability
+
+	print("You owe $%.2f in taxes" % tax_liability)
+	print("You income after tax is: $%.2f" % atax)
 	
 def hoh():
 	std = 9350
@@ -92,14 +98,16 @@ def hoh():
 		tax_liability = ((income - 416700) * .35 ) + 117202.50
 	else:
 		tax_liability = ((income - 444550) * .396 ) + 126950
-	
-	print "You owe %f in taxes" % (tax_liability)
-	print "You income after tax is: $%f" % (income - tax_liability)
+
+	atax = income - tax_liability
+
+	print("You owe $%.2f in taxes" % tax_liability)
+	print("You income after tax is: $%.2f" % atax)
 	
 
-status	= raw_input("What is your current filing status? ").lower()
-income = int(raw_input("What is your yearly income? "))
-dependants = int(raw_input("How many dependents do you have? "))
+status	= input("What is your current filing status? ").lower()
+income = int(input("What is your yearly income? "))
+dependants = int(input("How many dependents do you have? "))
 
 
 if status in ["single", "s"]:
@@ -111,4 +119,4 @@ elif status in ["married filing sepearatly", "mfs"]:
 elif status in ["hoh", "head of household"]:
 	hoh()
 else:
-	print "Sorry, I didn't get that. Please try again."
+	print("Sorry, I didn't get that. Please try again.")
