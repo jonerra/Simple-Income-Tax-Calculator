@@ -7,19 +7,19 @@ def single():
 	tax_income = income - std - exemption
 
 	if tax_income <= 9325:
-		tax_liability = income * .10
+		tax_liability = tax_income * .10
 	elif tax_income in range(9326, 37950):
-		tax_liability = ((income - 9325) * .15 ) + 932.50
+		tax_liability = ((tax_income - 9325) * .15 ) + 932.50
 	elif tax_income in range(37951, 91900):
-		tax_liability = ((income - 37950) * .25 ) + 5226.25
+		tax_liability = ((tax_income - 37950) * .25 ) + 5226.25
 	elif tax_income in range(91901, 191650):
-		tax_liability = ((income - 91900) * .28 ) + 18713.75
+		tax_liability = ((tax_income - 91900) * .28 ) + 18713.75
 	elif tax_income in range(191651, 416700):
-		tax_liability = ((income - 191650) * .33 ) + 46643.75
+		tax_liability = ((tax_income - 191650) * .33 ) + 46643.75
 	elif tax_income in range(416701, 418400):
-		tax_liability = ((income - 416700) * .35 ) + 120910.25
+		tax_liability = ((tax_income - 416700) * .35 ) + 120910.25
 	else:
-		tax_liability = ((income - 418400) * .396 ) + 121505.25
+		tax_liability = ((tax_income - 418400) * .396 ) + 121505.25
 
 	atax = income - tax_liability
 	
@@ -33,19 +33,19 @@ def mfj():
 	tax_income = income - std - exemption
 	
 	if tax_income <= 18650:
-		tax_liability = income * .10
+		tax_liability = tax_income * .10
 	elif tax_income in range(18651, 75900):
-		tax_liability = ((income - 18650) * .15 ) + 1865
+		tax_liability = ((tax_income - 18650) * .15 ) + 1865
 	elif tax_income in range(75901, 153100):
-		tax_liability = ((income - 75900) * .25 ) + 10452.50
+		tax_liability = ((tax_income - 75900) * .25 ) + 10452.50
 	elif tax_income in range(153101, 233350):
-		tax_liability = ((income - 153100) * .28 ) + 29752.50
+		tax_liability = ((tax_income - 153100) * .28 ) + 29752.50
 	elif tax_income in range(233351, 416700):
-		tax_liability = ((income - 233350) * .33 ) + 52222.50
+		tax_liability = ((tax_income - 233350) * .33 ) + 52222.50
 	elif tax_income in range(416701, 470700):
-		tax_liability = ((income - 416700) * .35 ) + 112728
+		tax_liability = ((tax_income - 416700) * .35 ) + 112728
 	else:
-		tax_liability = ((income - 470700) * .396 ) + 131628
+		tax_liability = ((tax_income - 470700) * .396 ) + 131628
 
 	atax = income - tax_liability
 
@@ -59,19 +59,19 @@ def mfs():
 	tax_income = income - std - exemption
 
 	if tax_income <= 9325:
-		tax_liability = income * .10
+		tax_liability = tax_income * .10
 	elif tax_income in range(9326, 37950):
-		tax_liability = ((income - 9325) * .15 ) + 932.50
+		tax_liability = ((tax_income - 9325) * .15 ) + 932.50
 	elif tax_income in range(37951, 76550):
-		tax_liability = ((income - 37950) * .25 ) + 5226.25
+		tax_liability = ((tax_income - 37950) * .25 ) + 5226.25
 	elif tax_income in range(76551, 116675):
-		tax_liability = ((income - 76550) * .28 ) + 14876.25
+		tax_liability = ((tax_income - 76550) * .28 ) + 14876.25
 	elif tax_income in range(116676, 208350):
-		tax_liability = ((income - 116675) * .33 ) + 26111.25
+		tax_liability = ((tax_income - 116675) * .33 ) + 26111.25
 	elif tax_income in range(208351, 235350):
-		tax_liability = ((income - 208350) * .35 ) + 56364
+		tax_liability = ((tax_income - 208350) * .35 ) + 56364
 	else:
-		tax_liability = ((income - 235350) * .396 ) + 65814
+		tax_liability = ((tax_income - 235350) * .396 ) + 65814
 
 	atax = income - tax_liability
 
@@ -85,19 +85,19 @@ def hoh():
 	tax_income = income - std - exemption
 
 	if tax_income <= 13350:
-		tax_liability = income * .10
+		tax_liability = tax_income * .10
 	elif tax_income in range(13351, 50800):
-		tax_liability = ((income - 13350) * .15 ) + 1335
+		tax_liability = ((tax_income - 13350) * .15 ) + 1335
 	elif tax_income in range(50801, 131200):
-		tax_liability = ((income - 50800) * .25 ) + 6952.50
+		tax_liability = ((tax_income - 50800) * .25 ) + 6952.50
 	elif tax_income in range(131201, 212500):
-		tax_liability = ((income - 131200) * .28 ) + 27052.50
+		tax_liability = ((tax_income - 131200) * .28 ) + 27052.50
 	elif tax_income in range(212501, 416700):
-		tax_liability = ((income - 212500) * .33 ) + 49816.50
+		tax_liability = ((tax_income - 212500) * .33 ) + 49816.50
 	elif tax_income in range(416701, 444550):
-		tax_liability = ((income - 416700) * .35 ) + 117202.50
+		tax_liability = ((tax_income - 416700) * .35 ) + 117202.50
 	else:
-		tax_liability = ((income - 444550) * .396 ) + 126950
+		tax_liability = ((tax_income - 444550) * .396 ) + 126950
 
 	atax = income - tax_liability
 
